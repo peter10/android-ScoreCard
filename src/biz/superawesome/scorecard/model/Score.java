@@ -10,7 +10,7 @@ public class Score {
 	@DatabaseField(foreign = true)
 	public Hole hole;
 
-	@DatabaseField(foreign = true)
+	@DatabaseField(foreign = true, foreignAutoRefresh=true, maxForeignAutoRefreshLevel=3)
 	public Player player;
 
 	@DatabaseField
@@ -20,4 +20,9 @@ public class Score {
 	public int circles = 0;
 	
 	Score() {}
+	
+	public Score(Hole h, Player p) {
+		hole = h;
+		player = p;
+	}
 }

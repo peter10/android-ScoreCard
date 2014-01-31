@@ -35,33 +35,4 @@ public class Round {
 	    //returnValue += ", " + getOverUnder() + " after " + getHolesPlayed(); 
 	    return returnValue;
 	}
-	/*
-	public int getOverUnder() {
-		int overUnder = 0;
-		for (Score s : scores.toArray(new Score[]{})) {
-			if (s.score > 0) {
-				overUnder = overUnder + s.score - 3;
-			}
-		}
-		return overUnder;
-	}
-	
-	public int getHolesPlayed() {
-		int holesPlayed = 0;
-		for (Score s : scores.toArray(new Score[]{})) {
-			if (s.score > 0) {
-				holesPlayed++;
-			}
-		}
-		return holesPlayed;
-	}
-	
-	public int getTotal() {
-		int total = 0;
-		for (Score s : scores.toArray(new Score[]{})) {
-			total += s.score;
-		}
-		return total;
-	}*/
-	
 }

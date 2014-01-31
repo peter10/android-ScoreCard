@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <item android:id="@+id/add_player_action" android:title="add player" android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/round_action" android:title="Round" android:showAsAction="ifRoom"></item>
     <item android:id="@+id/main_action" android:title="Home" android:showAsAction="ifRoom"></item>
 
 </menu>

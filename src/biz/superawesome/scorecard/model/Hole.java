@@ -9,7 +9,7 @@ public class Hole {
 	@DatabaseField(generatedId = true)
 	public int id;
 
-	@DatabaseField(foreign = true)
+	@DatabaseField(foreign = true, foreignAutoRefresh=true, maxForeignAutoRefreshLevel=3)
 	public Round round;
 	
 	@ForeignCollectionField(eager = true)
@@ -33,10 +33,13 @@ public class Hole {
 	}
 
 	public String toString() {
-		String returnValue = name;/*
-		if (score > 0) {
-			returnValue += ": " + score;
-		}*/
+		String returnValue = name;
+		// add scores if they have been scored
+		for (Score s : scores) {
+			if (s.score > 0) {
+				returnValue += " " + s.player.toString() + ": " + s.score; 
+			}
+		}
 		return returnValue;
 	}
 }

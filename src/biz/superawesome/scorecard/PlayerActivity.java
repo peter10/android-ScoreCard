@@ -2,6 +2,7 @@ package biz.superawesome.scorecard;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.Menu;
@@ -48,18 +49,6 @@ public class PlayerActivity extends OrmLiteBaseActivity<DatabaseHelper>
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.player, menu);
 		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle presses on the action bar items
-		switch (item.getItemId()) {
-		case R.id.add_player_action:
-			addPlayer();
-			return true;
-		default:
-			return super.onOptionsItemSelected(item);
-		}
 	}
 
 	@Override
@@ -118,5 +107,21 @@ public class PlayerActivity extends OrmLiteBaseActivity<DatabaseHelper>
 				});
 
 		alert.show();
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle presses on the action bar items
+		switch (item.getItemId()) {
+		case R.id.add_player_action:
+			addPlayer();
+			return true;
+        case R.id.main_action:
+        	Intent j = new Intent(this, MainActivity.class);
+            startActivity(j);
+            return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
 	}
 }

@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/round_score" android:title="Current score" android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/round_players_action" android:title="Current players" android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/main_action" android:title="Home" android:showAsAction="ifRoom"></item>
+
+</menu>

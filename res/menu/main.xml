@@ -1,10 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_settings"/>
-    <item android:id="@+id/player_action" android:title="player"></item>
+    <item android:id="@+id/new_round_action" android:title="New round" android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/player_action" android:title="Players" android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/view_rounds_action" android:title="View rounds" android:showAsAction="ifRoom"></item>
 
 </menu>

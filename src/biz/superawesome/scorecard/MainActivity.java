@@ -1,8 +1,8 @@
 package biz.superawesome.scorecard;
 
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -25,20 +25,15 @@ public class MainActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    // Handle presses on the action bar items
 	    switch (item.getItemId()) {
-        	case R.id.action_settings:
-        		return true;
-	        /*case R.id.main_action:
-	            startActivity(new Intent(this, MainActivity.class));
-	            return true;*/
 	        case R.id.player_action:
 	            startActivity(new Intent(this, PlayerActivity.class));
 	            return true;
-	        /*case R.id.new_round_action:
+	        case R.id.new_round_action:
 	            startActivity(new Intent(this, NewRoundActivity.class));
 	            return true;
 	        case R.id.view_rounds_action:
 	            startActivity(new Intent(this, ViewRoundsActivity.class));
-	            return true;*/
+	            return true;
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }

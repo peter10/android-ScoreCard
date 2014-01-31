@@ -1,0 +1,1 @@
+I wanted to learn about Android, and I wanted to keep score at disc golf, so I made this app. It's got a few rough edges (DB access in UI thread, no thought put towards cosmetics) but it works! You can download the APK at http://superawesome.biz/ScoreCard.apk

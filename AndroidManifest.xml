@@ -30,6 +30,22 @@
             android:name="biz.superawesome.scorecard.ViewRoundsActivity"
             android:label="@string/title_activity_view_rounds" >
         </activity>
+        <activity
+            android:name="biz.superawesome.scorecard.RoundActivity"
+            android:label="@string/title_activity_round" >
+        </activity>
+        <activity
+            android:name="biz.superawesome.scorecard.NewRoundActivity"
+            android:label="@string/title_activity_new_round" >
+        </activity>
+        <activity
+            android:name="biz.superawesome.scorecard.HoleActivity"
+            android:label="@string/title_activity_hole" >
+        </activity>
+        <activity
+            android:name="biz.superawesome.scorecard.RoundPlayersActivity"
+            android:label="@string/title_activity_round_players" >
+        </activity>
     </application>
 
 </manifest>

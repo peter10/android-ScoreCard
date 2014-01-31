@@ -22,4 +22,16 @@ public class Player {
 		return name;
 	}
 
+    public boolean equals(Object obj) {
+        if (obj == null)
+            return false;
+        if (obj == this)
+            return true;
+        if (!(obj instanceof Player))
+            return false;
+
+        Player rhs = (Player) obj;
+        return (id == rhs.id);
+    }
+
 }
